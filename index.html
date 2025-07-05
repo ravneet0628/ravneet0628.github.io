@@ -3,39 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravneet Kaur - Portfolio</title>
+    <title>Ravneet Kaur - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Full Stack Developer specializing in React, TypeScript, Node.js, and modern web technologies. View my projects including PDFolio, AstroBlog Pro, and more.">
+    <meta name="keywords" content="Full Stack Developer, React, TypeScript, Node.js, AWS, JavaScript, Portfolio, Web Development">
+    <meta name="author" content="Ravneet Kaur">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ravneet Kaur - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in React, TypeScript, Node.js, and modern web technologies.">
+    <meta property="og:url" content="https://ravneet0628.github.io">
+    <meta property="og:image" content="https://ravneet0628.github.io/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Ravneet Kaur - Full Stack Developer Portfolio">
+    <meta property="twitter:description" content="Full Stack Developer specializing in React, TypeScript, Node.js, and modern web technologies.">
+    <meta property="twitter:image" content="https://ravneet0628.github.io/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ravneet Kaur",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer specializing in React, TypeScript, Node.js, and modern web technologies.",
+        "url": "https://ravneet0628.github.io",
+        "sameAs": [
+            "https://github.com/ravneet0628",
+            "https://www.linkedin.com/in/rk0628/"
+        ],
+        "knowsAbout": [
+            "React", "TypeScript", "Node.js", "AWS", "JavaScript", "Next.js", "Astro"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header class="hero">
-        <h1>Hi, I'm Ravneet Kaur</h1>
-        <p>Front-End Developer | UI/UX Enthusiast | Office Administrator</p>
-    </header>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <section class="portfolio">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Simple JavaScript Game</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-text">Ravneet Kaur</div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Responsive Website</p>
-                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>Personal Blog</p>
-                <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Ravneet Kaur</span>
+            </h1>
+            <p class="hero-subtitle">Full Stack Developer | React Specialist | Modern Web Solutions</p>
+            <p class="hero-description">
+                Passionate about creating innovative web applications with modern technologies like React, Next.js, Astro, TypeScript, Node.js, and cloud platforms.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
     </section>
-    
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- PDFolio Project -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>PDFolio - Privacy-First PDF Toolkit</h3>
+                        <p>A complete in-browser PDF utility suite with 15 professional tools including merge, split, rotate, and compress - all processing files locally for maximum privacy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">PDF-lib</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pdfolio.onrender.com" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/ravneet0628/pdfolio" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/projects/pdfolio.png" alt="PDFolio - PDF Tools Interface" />
+                    </div>
+                </div>
+
+                <!-- AstroBlog Pro -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>AstroBlog Pro - Modern Blog Platform</h3>
+                        <p>A complete blog platform with Astro and Strapi CMS featuring SEO optimization, RSS feeds, Docker containerization, and a modern responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Astro</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Strapi CMS</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Nginx</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://resetat30.pages.dev/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/ravneet0628/astro_blog" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/projects/astroblog.png" alt="AstroBlog - Modern Blog Platform" />
+                    </div>
+                </div>
+
+                <!-- Insurance Website -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>SecureChoice Insurance Website</h3>
+                        <p>A modern, responsive insurance broker website built with React 19, TypeScript, and Tailwind CSS featuring SEO optimization and accessibility compliance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React 19</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Framer Motion</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://top-insurance.pages.dev/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/ravneet0628/insurance-site" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/projects/insurance.png" alt="Insurance Website - Professional Business Interface" />
+                    </div>
+                </div>
+
+                <!-- Amby Music -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Amby Music - Music Showcase Platform</h3>
+                        <p>A full-stack music showcase website with YouTube gallery, contact forms, and admin dashboard. Features AWS Lambda backend and DynamoDB storage.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">DynamoDB</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ambymusic.com" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/ravneet0628/AmbyMusic" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/projects/ambymusic.png" alt="Amby Music - Music Platform Interface" />
+                    </div>
+                </div>
+
+                <!-- PhotoLP -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>PhotoLP - Photographer Portfolio</h3>
+                        <p>A responsive, elegant photographer portfolio landing page built with React and Tailwind CSS featuring photo galleries, Google Maps integration, and WhatsApp contact.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Google Maps API</span>
+                            <span class="tech-tag">WhatsApp Integration</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://shivstudio.onrender.com/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/ravneet0628/PhotoLP" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/projects/photolp.png" alt="PhotoLP - Photography Portfolio Interface" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Stack</h2>
+            <div class="skills-showcase">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                    <span>React</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+                    <span>Next.js</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg" alt="Astro" />
+                    <span>Astro</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
+                    <span>Express</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" />
+                    <span>AWS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                    <span>Docker</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+                    <span>Tailwind</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                    <span>Git</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" />
+                    <span>Vite</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm passionate about crafting digital experiences that solve real problems. Always interested in discussing new opportunities and innovative projects!</p>
+                    <div class="contact-links">
+                        <a href="mailto:ravneetkaur0628@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>ravneetkaur0628@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/ravneet0628" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/ravneet0628</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rk0628/" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>Contact me at: <a href="mailto:ravneet@example.com">ravneet@example.com</a></p>
-        <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">Connect on LinkedIn</a></p>
+        <div class="container">
+            <p>&copy; 2025 Ravneet Kaur. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
